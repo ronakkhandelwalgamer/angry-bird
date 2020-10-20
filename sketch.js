@@ -14,6 +14,7 @@ var ball;
 var background1;
 
 var myEngine,myWorld,ground;
+var platform;
 
 function preload(){
   background1=loadImage("sprites/bg.png");
@@ -45,6 +46,8 @@ Log3=new Log(760,120,150,PI/7);
 Log4=new Log(870,120,150,-PI/7);
 
 Bird1=new Bird(200,200);
+
+platform=new Ground(150,305,300,170);
 }
 function draw() {
   background(background1);  
@@ -67,6 +70,7 @@ Log3.display();
 Log4.display();
 
 Bird1.display();
+platform.display();
 
 
 }
